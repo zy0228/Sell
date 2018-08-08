@@ -48,12 +48,12 @@ export default {
   computed: {
     positive() {
       return this.ratings.filter((rating) => {
-        return rating.rateType = POSITIVE;
+        return rating.rateType === POSITIVE;
       })
     },
     negative() {
       return this.ratings.filter((rating) => {
-        return rating.rateType = NEGATIVE;
+        return rating.rateType === NEGATIVE;
       })
     }
   },
